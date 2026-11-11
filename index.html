@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#eee8dc">
+<title>ZentBuy spreadsheet – svensk köpguide för skor och kläder</title>
+<meta name="description" content="Svensk guide till ZentBuy spreadsheet. Bläddra bland tio kategorier på Cafans och lär dig jämföra storlekar, QC-bilder och totalkostnad före köp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:title" content="ZentBuy spreadsheet – svensk köpguide för skor och kläder">
+<meta property="og:description" content="Tio produktkategorier på Cafans och en praktisk guide till produktlänkar, mått, QC-bilder och frakt.">
+<style>
+:root{color-scheme:light;--paper:#eee8dc;--ink:#232024;--plum:#492437;--line:#b6a8a1;--white:#fbf8f2}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+.wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+a{color:inherit;text-underline-offset:.2em}
+a:focus-visible,summary:focus-visible{outline:3px solid #075c72;outline-offset:4px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-block:.8rem}
+.logo{font-weight:800}
+h1,h2,h3,p,figure{margin:0}
+h1,h2{font-family:Georgia,serif;line-height:1.05}
+h1{font-size:clamp(2.75rem,7.5vw,6rem);letter-spacing:-.055em;overflow-wrap:anywhere}
+h2{font-size:clamp(1.9rem,4vw,3.25rem);letter-spacing:-.035em;margin-bottom:1rem}
+h3{line-height:1.25;margin-bottom:.5rem}
+p+p{margin-top:.8rem}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:clamp(1rem,5vw,4rem);padding-block:clamp(1.4rem,5vw,4rem)}
+.hero p{max-width:52ch;margin-top:1rem}
+img{display:block;width:100%;height:auto;background:var(--white)}
+.hero img{aspect-ratio:4/3;object-fit:contain}
+figcaption{font-size:.875rem;margin-top:.45rem}
+section{border-top:1px solid var(--line);padding-block:clamp(1.5rem,4vw,3.3rem)}
+nav ul{padding:0;margin:0;list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.5rem}
+nav a{display:flex;align-items:center;min-height:3rem;padding:.55rem .75rem;background:var(--white);border:1px solid var(--line);font-weight:650}
+nav a:hover{background:var(--plum);color:white}
+.gallery,.stories{display:grid;gap:1rem}
+.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery img{aspect-ratio:1;object-fit:contain}
+.stories{grid-template-columns:repeat(2,minmax(0,1fr))}
+article{background:var(--white);border-top:.3rem solid var(--plum);padding:clamp(1rem,3vw,1.65rem)}
+details{border-bottom:1px solid var(--line);padding:.75rem 0}
+summary{cursor:pointer;font-weight:700}
+details p{padding:.45rem 0 0;max-width:70ch}
+footer{background:var(--plum);color:white;padding:1.3rem 0}
+@media(max-width:760px){nav ul{grid-template-columns:repeat(3,minmax(0,1fr))}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.hero,.stories{grid-template-columns:1fr}nav ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "inLanguage":"sv",
+  "name":"ZentBuy spreadsheet – svensk köpguide för skor och kläder",
+  "description":"Svensk guide till ZentBuy spreadsheet. Bläddra bland tio kategorier på Cafans och lär dig jämföra storlekar, QC-bilder och totalkostnad före köp.",
+  "mainEntity":[
+    {"@type":"Question","name":"Vad är ett ZentBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Det är en produktlista som brukar samla länkar till säljares annonser. På den här sidan finns en köpguide och kategorilänkar till Cafans."}},
+    {"@type":"Question","name":"Vad visar QC-bilder?","acceptedAnswer":{"@type":"Answer","text":"QC-bilder visar varans synliga skick och detaljer vid fotograferingen. Använd dem för att kontrollera färg, sömmar och märkning. Äkthet kräver separat verifiering."}},
+    {"@type":"Question","name":"Hur uppskattar jag totalkostnaden till Sverige?","acceptedAnswer":{"@type":"Answer","text":"Räkna ihop varans pris, inrikesfrakt, eventuella tjänsteavgifter och internationell frakt. Kontrollera sedan om moms, tull eller transportörens hanteringsavgift tillkommer."}},
+    {"@type":"Question","name":"Vart leder kategorilänkarna?","acceptedAnswer":{"@type":"Answer","text":"Varje kategorilänk öppnar motsvarande kategori på Cafans. Där kan du se vilka varor som visas just nu."}}
+  ]
+}
+</script>
+<!-- Sökresearch för ZentBuy spreadsheet. Googles förstasida kunde inte verifieras.
+Sökresultatens ämnen: SSFinds /zentbuy-spreadsheet (kategorier, QC), zentbuy-spreadsheets.com/blog/how-to-use-zentbuy-spreadsheet (filtrering), ChinaGrails (produktlänkar, vikt), SSFinds /agents (agentöversikt), zentbuy-spreadsheets.com (marknadsplatser), zentbuy-spreadsheets.com/about (produktindex), zentbuyspreadsheet.com (produktlistor), Mixfittio (källmarknader), Repsheet (QC), Linktree /zentbuy (kanaler och länkar).
+Föreslagna sekundära sökord: ZentBuy köpguide, ZentBuy produktlänkar, ZentBuy QC-bilder, ZentBuy frakt till Sverige.
+Bildkällor i bildordning: Nike Chile, Who What Wear, Gucci, Hermès och Dior. -->
+<link rel="canonical" href="https://kakobuyfinds.github.io/whobo/">
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="https://www.cafans.com">www.cafans.com</a><a href="https://www.cafans.com">Öppna Cafans</a></div></header>
+<main class="wrap">
+<div class="hero">
+<div>
+<h1>ZentBuy spreadsheet</h1>
+<p>En svensk köpguide för dig som vill hitta rätt kategori, läsa produktlänkar och jämföra skor, kläder och accessoarer före ett köp. Kategorierna nedan leder till Cafans.</p>
+</div>
+<figure>
+<img src="https://nikeclprod.vtexassets.com/arquivos/ids/160793/CW2288_111_A_PREM.jpg?v=637654399803530000" width="640" height="480" fetchpriority="high" alt="Vit Nike Air Force 1 ’07 med vit sula och vita snören">
+<figcaption>Nike Air Force 1 ’07 · exempel på sneakers</figcaption>
+</figure>
+</div>
+<section aria-labelledby="categories">
+<h2 id="categories">Välj produktkategori</h2>
+<nav aria-label="Produktkategorier på Cafans"><ul>
+<li><a href="https://cafans.com/category-911-Shoes.html">Skor</a></li>
+<li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies och tröjor</a></li>
+<li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts</a></li>
+<li><a href="https://cafans.com/category-914-Jackets.html">Jackor</a></li>
+<li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Byxor och shorts</a></li>
+<li><a href="https://cafans.com/category-916-Headwear.html">Kepsar och mössor</a></li>
+<li><a href="https://cafans.com/category-917-Sets.html">Klädset</a></li>
+<li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Underkläder</a></li>
+<li><a href="https://cafans.com/category-919-Jersey.html">Matchtröjor</a></li>
+<li><a href="https://cafans.com/category-920-Accessories.html">Accessoarer</a></li>
+</ul></nav>
+</section>
+<section aria-labelledby="photos">
+<h2 id="photos">Material och detaljer att titta på</h2>
+<div class="gallery">
+<figure><img src="https://cdn.cliqueinc.com/posts/281915/most-popular-louis-vuitton-bags-281915-1696449400488-main.700x0c.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Brun Louis Vuitton Speedy-väska med monogram och ljusa handtag"><figcaption>Louis Vuitton Speedy · handtag och beslag</figcaption></figure>
+<figure><img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Beige Gucci-keps med GG-mönster och böjd skärm"><figcaption>Gucci GG · skärm och paneler</figcaption></figure>
+<figure><img src="https://assets.hermes.com/is/image/hermesproduct/bracelet-clic-h--700001F%204P-front-1-300-0-1000-1000_b.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="Emaljerat Hermès Clic H-armband med H-format spänne"><figcaption>Hermès Clic H · spänne och ytfinish</figcaption></figure>
+<figure><img src="https://assets.christiandior.com/is/image/diorprod/683M620A7040C585_E01-1?%24default_GH%24=&amp;crop=463%2C162%2C1051%2C1752&amp;extend=0%2C0%2C0%2C250&amp;hei=2000&amp;scale=0.875&amp;wid=1850" width="1850" height="2000" loading="lazy" decoding="async" alt="Blå Dior Oblique-tröja med jacquardmönster"><figcaption>Dior Oblique · stickning och mönster</figcaption></figure>
+</div>
+</section>
+<section aria-labelledby="guides">
+<h2 id="guides">Från produktlänk till köpbeslut</h2>
+<div class="stories">
+<article><h3>Så läser du en produktlänk</h3><p>När du använder ett ZentBuy spreadsheet för att jämföra annonser, anteckna modellnamn, färgkod och säljarens produktnummer. En Weidian-länk, en Taobao-annons och en 1688-listning kan visa samma modellnamn men olika varianter. Kontrollera lagersaldo, minsta beställningsantal och returvillkor i den aktuella annonsen.</p></article>
+<article><h3>Jämför mått med något du redan äger</h3><p>För sneakers kan du jämföra innersulans längd i centimeter med ett par som passar. För en hoodie kan du mäta bröstbredd, ärmlängd och plagglängd när plagget ligger plant. Kontrollera midjemått och innerbenslängd för byxor samt huvudomkrets för kepsar.</p></article>
+<article><h3>Läs QC-bilderna i rätt ordning</h3><p>Börja med en helbild för att kontrollera modell och färg. Be vid behov om närbilder på sömmar, etikett, dragkedja eller sulkant. För en väska kan du granska handtagens fästen och fodret. För ett armband kan du fråga efter inneromkrets och en bild av låset i stängt läge.</p></article>
+<article><h3>Räkna på frakt till Sverige</h3><p>Skriv upp varans pris, växelkurs, inrikesfrakt och eventuella avgifter innan du jämför fraktalternativ. Fråga om paketvikt och mått när leverantören använder volymvikt. Kontrollera om moms, tull eller transportörens hanteringsavgift ingår i det beräknade slutbeloppet.</p></article>
+</div>
+</section>
+<section aria-labelledby="faq">
+<h2 id="faq">Vanliga frågor</h2>
+<details><summary>Vad är ett ZentBuy spreadsheet?</summary><p>Det är en produktlista som brukar samla länkar till säljares annonser. På den här sidan finns en köpguide och kategorilänkar till Cafans.</p></details>
+<details><summary>Vad visar QC-bilder?</summary><p>QC-bilder visar varans synliga skick och detaljer vid fotograferingen. Använd dem för att kontrollera färg, sömmar och märkning. Äkthet kräver separat verifiering.</p></details>
+<details><summary>Hur uppskattar jag totalkostnaden till Sverige?</summary><p>Räkna ihop varans pris, inrikesfrakt, eventuella tjänsteavgifter och internationell frakt. Kontrollera sedan om moms, tull eller transportörens hanteringsavgift tillkommer.</p></details>
+<details><summary>Vart leder kategorilänkarna?</summary><p>Varje kategorilänk öppnar motsvarande kategori på Cafans. Där kan du se vilka varor som visas just nu.</p></details>
+</section>
+</main>
+<footer><div class="wrap"><p>Fristående köpguide. Varumärkesbilderna illustrerar modeller och detaljer.</p><a href="https://www.cafans.com">www.cafans.com</a></div></footer>
+</body>
+</html>
